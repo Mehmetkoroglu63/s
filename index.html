@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arka Plan Resmi</title>
+    <style>
+        body {
+            background-image: url('photo.jpg'); /* Resmin doğru yolu buraya eklenmeli */
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.6); /* Formun okunaklı olması için arka plan ekledim */
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: azure;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>ROBAKT ŞİRKETİNE BAŞVURU FORMU</h2>
+        
+        <label for="name">İsim:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="sname">Soyisim:</label>
+        <input type="text" id="sname" name="sname" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label>Cinsiyet:</label> <br>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+        <label for="erkek">Erkek</label>
+        
+        <input type="radio" id="kadin" name="cinsiyet" value="kadın">
+        <label for="kadin">Kadın</label>
+        
+        <input type="radio" id="diger" name="cinsiyet" value="diger">
+        <label for="diger">Diğer</label>
+        
+        <button type="submit">Gönder</button>
+    </form>
+
+</body>
+</html>
